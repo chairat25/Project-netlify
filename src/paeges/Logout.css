@@ -1,0 +1,78 @@
+.iconbackinlogout{
+  font-size: 2rem;
+  position: relative; /* Add this to fix the element's position relative to the viewport */
+   /* Adjust this value as needed */
+  left:1rem;/* Adjust this value as needed */
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+
+.outlineinlogout{
+  position: relative; /* Ensures the element stays fixed in the viewport */
+  bottom: 17rem; /* Adjust this value as needed, to position below .backintranslate */
+  right: 20rem; /* Adjust this value as needed */
+  border: solid;
+  width: 4.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.iconbackinlogout:hover{
+  transform: scale(1.3);
+}
+
+.outlineinlogout:hover{
+  transform: scale(1.3);
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+
+body {
+    height: 100%;
+    margin: 0;
+    background-color: rgb(211, 40, 40);
+  }
+  
+  .bklogout {
+    position: relative;
+    width: 100vw; /* Full screen width */
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Prevent overflow of pseudo-element */
+  }
+  
+  .bklogout::before {
+    content: "";
+    background-image: url("https://img.freepik.com/free-photo/aerial-view-hot-tea-drink-break-relaxation-concept-with-copy-space_53876-20523.jpg?size=626&ext=jpg&ga=GA1.1.632798143.1705363200&semt=ais");
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px); /* Increased blur for more effect */
+  }
+  
+  .form-logout {
+    width: 40vw; /* Width of the form */
+    height: auto; /* Height of the form */
+    background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    transition: background-color 2s ease-out, transform 0.3s ease;
+    border-radius: 30px;
+    padding: 40px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow-y: auto; /* Allow vertical scrolling if content overflows */
+    max-height: 80vh; /* Maximum height */
+    z-index: 1; /* Place the form above the blurred background */
+    position: relative; /* Required for z-index to work */
+  }
+  
+  .form-logout:hover {
+    background-color: rgb(249, 229, 229);
+  }

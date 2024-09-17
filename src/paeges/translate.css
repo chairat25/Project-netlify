@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Azeret+Mono&display=swap");
+.backintranslate {
+  font-size: 2rem;
+  position: relative; /* Add this to fix the element's position relative to the viewport */
+   /* Adjust this value as needed */
+  left:1rem;/* Adjust this value as needed */
+  transition: transform 0.2s;
+  cursor: pointer;
+  
+}
+
+.Outlinebackintranslate {
+  position: relative; /* Ensures the element stays fixed in the viewport */
+  bottom: -7rem; /* Adjust this value as needed, to position below .backintranslate */
+  right: 45%; /* Adjust this value as needed */
+  border: solid;
+  width: 4.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+
+  
+}
+.backintranslate:hover{
+  transform: scale(1.3);
+ 
+}
+.Outlinebackintranslate:hover{
+  transform: scale(1.3);
+  background-color: rgb(255, 255, 255);
+}
+
+
+.header {
+  font-family: "Azeret Mono", monospace;
+  font-size: 40px;
+  
+}
+
+.app-body {
+  display: flex; /* Enable flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  background: url("https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg");
+  background-size: cover; /* Adjust image size to cover the element */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  border-radius: 15px;
+  background-clip: border-box; /* Clip the background to the border */
+  text-align: center; /* Center text */
+  transition: transform 0.2s;
+  position: relative; /* Add position relative to contain absolute elements */
+ 
+}
+
+
+.app-body::before {
+  content: "";
+  position: absolute; /* Position the pseudo-element absolutely */
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.5
+  ); /* Set a semi-transparent white background */
+  backdrop-filter: blur(5px); /* Add a blur effect */
+  z-index: -1; /* Push the pseudo-element behind other content */
+}
+
+.form-control-Translate {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+  align-items: center; /* Center form elements */
+  padding: 25px; /* Add some padding */
+  border-radius: 10px; /* Round the corners */
+  transition: transform 0.2s;
+}
+
+.language-select {
+  margin-bottom: 5px;
+  outline: none;
+  border-radius: 10px;
+  font-size: 22px;
+}
+
+.long-select-language {
+  width: 500px;
+  margin-bottom: 10px; /* Add some space below the select box */
+  margin-left: 11rem;
+}
+.result {
+  margin-left: 9rem;
+  font-size: 22px;
+}
+
+.inputtext,
+.result {
+  width: 600px;
+  height: 200px;
+  margin-bottom: 10px; /* Add some space below the text areas */
+  border-radius: 10px;
+}
+.inputtext {
+  height: 200px; /* Increase the height of the input text area */
+}
+
+.translate-button {
+  position: relative;
+  top: 25px;
+  right: 43%;
+ 
+}
+.custom-textarea {
+  width: 600px;
+  height: 200px;
+  border-radius: 10px;
+  font-size: 22px;
+}

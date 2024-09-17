@@ -1,0 +1,168 @@
+/* body {
+  background: lightblue url("https://i.pinimg.com/originals/33/ef/8b/33ef8b9c0b902154a6cd4103a21275ef.jpg") no-repeat fixed center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+} */
+
+.iconbackineditstore{
+  font-size: 2rem;
+  position: relative; /* Add this to fix the element's position relative to the viewport */
+   /* Adjust this value as needed */
+  left:1rem;/* Adjust this value as needed */
+  transition: transform 0.2s;
+  cursor: pointer;
+  z-index: 999;
+}
+
+
+.outlineineditstore{
+  position: relative; /* Ensures the element stays fixed in the viewport */
+  top: 4rem; /* Adjust this value as needed, to position below .backintranslate */
+  left: 25%; /* Adjust this value as needed */
+  border: solid;
+  width: 4.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  z-index: 999;
+}
+
+.iconbackineditstore:hover{
+  transform: scale(1.3);
+}
+
+.outlineineditstore:hover{
+  transform: scale(1.3);
+  background-color: rgb(255, 255, 255);
+}
+
+.main-container {
+  position: relative;
+  background-color: white;
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  background: lightblue
+    url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.main-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* ทำให้เบลอคลุมภาพพื้นหลัง */
+  filter: blur(5px); /* ค่า blur สามารถปรับได้ตามความต้องการ */
+  z-index: 1; /* ควบคุมลำดับชั้นเพื่อให้เบลออยู่ด้านล่างเนื้อหา */
+}
+
+.shop-container {
+  margin: 35px 0;
+}
+
+.input-file-container {
+  margin: 10px 220px;
+}
+
+.picture {
+  width: 35%;
+  height: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 26px;
+}
+.block {
+  color: black;
+}
+
+.name-store,
+.dayoff,
+.Location {
+  display: block;
+}
+
+.containner-box {
+  margin-left: 220px;
+}
+
+.colorinside {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin: 20px;
+}
+
+.grid-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.1);
+}
+
+.grid-button {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+.success-button,
+.cancel-button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.success-button {
+  background-color: #4caf50;
+  color: white;
+}
+
+.cancel-button {
+  background-color: #f44336;
+  color: white;
+}
+
+.labelinEditstore {
+  color: black;
+  font-style: bold;
+  font-size: 22px;
+  margin-left: 10rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+.custom-form-Editstore {
+  background-color: rgb(240, 167, 84);
+  width: 500px;
+  transition: background-color 2s ease-out, transform 0.3s ease;
+  z-index: 2;
+}
+
+.custom-form-Editstore:hover {
+  background-color: rgb(241, 241, 241);
+  box-shadow: inset;
+  box-shadow: 10px 10px 10px #888888;
+}
+.control-form {
+  margin-left: 6rem;
+}
+
+.control-button-form {
+  margin-top: 25px;
+  margin-bottom: 15px;
+  margin-left: 10rem;
+}

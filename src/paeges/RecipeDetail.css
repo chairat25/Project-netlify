@@ -1,0 +1,36 @@
+.recipe-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .recipe-name {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #4a4a4a;
+  }
+  
+  .recipe-category {
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #7f5fc0;
+    margin-bottom: 2rem;
+  }
+  
+  .recipe-details {
+    line-height: 1.6;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #262626;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  

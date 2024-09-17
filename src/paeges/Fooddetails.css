@@ -1,0 +1,333 @@
+.fooddetail888{
+  font-size: 28px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.backgroundfooddetail {
+  position: relative;
+  background-color: white;
+  width: 100vw;
+  min-height: 100vh;
+  padding-bottom: 20px;
+  background: lightblue
+    url("https://images.pexels.com/photos/616401/pexels-photo-616401.jpeg");
+  background-size: cover;
+  background-position: center;
+  /* Apply blur effect */
+}
+
+.backgroundfooddetail::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: inherit; /* ทำให้เบลอคลุมภาพพื้นหลัง */
+  filter: blur(5px); /* ค่า blur สามารถปรับได้ตามความต้องการ */
+  z-index: 1; /* ควบคุมลำดับชั้นเพื่อให้เบลออยู่ด้านล่างเนื้อหา */
+}
+.containerfooddetails {
+  position: relative;
+  left: 50%;
+  border-radius: 16px;
+  transform: translateX(-50%);
+  width: 100vw;
+  /* background: url("https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1L3B4MTM2OTgxMy1pbWFnZS1rd3Z4eHA5MS5qcGc.jpg") no-repeat center center; */
+  background-size: cover; /* Make the background cover the whole container */
+  padding: 75px;
+  height: 100vh; /* Ensure the container takes the full height of the viewport */
+  overflow-y: auto;
+  z-index: 1;
+}
+
+/* ปรับแต่ง padding และ margin ขององค์ประกอบภายใน */
+.title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.details {
+  display: flex;
+  gap: 45rem;
+  margin-bottom: 20px;
+}
+
+.detail-food,
+.detail-price {
+  display: inline-block;
+  width: 500px; /* ปรับขนาดตามที่ต้องการ */
+  font-size: 19px;
+  color: #555;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.food-image {
+  max-width: 550px; /* กำหนดให้รูปภาพไม่เกินขนาด container */
+  max-height: 250px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.ingredients-container {
+  flex: 1;
+}
+
+/*--------------------------------------------------- foodname----------------------------------------------------------- */
+.food-container {
+  cursor: pointer;
+
+  padding: 25px;
+  font-size: 16px;
+  transition: background-color 2s ease-out, transform 0.3s ease;
+}
+/* .food-container:hover {
+  border-radius: 12px;
+  box-shadow: 7px 8px 9px #888888;
+  transform: scale(0.9);
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+  font-size: 28px;
+  border: solid;
+  padding: 10px;
+} */
+
+.Food_name {
+  flex: 1;
+  display: inline-block; /* Display as inline block */
+  font-size: 22px;
+  margin-left: 4px;
+}
+
+/* --------------------------------------------------foodprice----------------------------------------------------------------- */
+.price-container {
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 2s ease-out, transform 0.3s ease;
+  padding: 6px;
+  border-radius: 10px;
+  display: inline-block; /* หรือ inline-flex */
+  padding: 25px;
+}
+
+.Food_price {
+  flex: 1;
+  display: inline-block; /* Display as inline block */
+  font-size: 22px;
+  margin-left: 4px;
+}
+/* .price-container:hover {
+  border-radius: 12px;
+  box-shadow: 7px 8px 9px #888888;
+  transform: scale(0.9);
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+  font-size: 28px;
+  border: solid;
+  padding: 10px;
+} */
+
+/* --------------------------------------------------foodprice----------------------------------------------------------------- */
+.ingredients-label {
+  display: inline-block; /* Display as inline block */
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* --------------------------------------------------watudip----------------------------------------------------------------- */
+.watudip-label {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+}
+.watudip-container {
+  font-size: 22px;
+  transition: background-color 2s ease-out, transform 0.3s ease;
+  padding: 6px;
+  border-radius: 10px;
+  display: inline-block; /* หรือ inline-flex */
+  position: absolute;
+ top:19rem;
+ left: 27rem;
+
+}
+.watudip-container:hover {
+  border-radius: 12px;
+  box-shadow: 7px 8px 9px #888888;
+  transform: scale(0.9);
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+  font-size: 22px;
+  border: solid;
+  padding: 10px;
+}
+
+.showingredient {
+  margin-top: 5px;
+  height: auto;
+  /* transition: background-color 2s ease-out, transform 0.3s ease; */
+}
+
+/* --------------------------------------------------watudip----------------------------------------------------------------- */
+
+/* --------------------------------------------------รายละเอียดอาหาร----------------------------------------------------------------- */
+.containner-detailfood {
+  font-size: 22px;
+  transition: background-color 2s ease-out, transform 0.3s ease;
+  padding: 6px;
+  border-radius: 10px;
+  display: inline-block; /* หรือ inline-flex */
+  cursor: pointer;
+}
+
+/* .containner-detailfood:hover {
+  border-radius: 12px;
+  box-shadow: 7px 8px 9px #888888;
+  transform: scale(0.9);
+  height: auto;
+  border-radius: 16px;
+  background-color: white;
+  font-size: 28px;
+  border: solid;
+  padding: 10px;
+} */
+
+/* --------------------------------------------------รายละเอียดอาหาร----------------------------------------------------------------- */
+.description {
+  font-size: 19px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ingredients-input,
+.description-input {
+  width: 700px;
+  height: 150px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow-y: auto; /* ทำให้เป็น scroll ในแนวแกน y เมื่อข้อความเกินขนาดกล่อง */
+  resize: vertical; /* ทำให้สามารถปรับขนาดกล่องได้แค่แนวแกน y */
+}
+/*-----------------------------------label-----------------------*/
+.description-label {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+  text-decoration: underline;
+  margin-top: 11px;
+}
+.watudip-label {
+  text-decoration: underline;
+}
+.description-api {
+  font-size: 18px;
+}
+
+.bk {
+  background-color: #fff;
+}
+
+.translation-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px; /* ระยะห่างจากด้านบน */
+  margin-bottom: 20px; /* ระยะห่างจากส่วนประกอบด้านล่าง */
+}
+.translation-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center; /* จัดข้อมูลให้อยู่ตรงกลางแนวนอน */
+  align-items: center; /* จัดข้อมูลให้อยู่ตรงกลางแนวตั้ง */
+  height: 100vh; /* ให้คอนเทนเนอร์เต็มสูงของหน้าจอ */
+}
+
+/* สไตล์สำหรับ select */
+.TranslateHome {
+  background-color: #f0f0f0; /* พื้นหลังสีเทาอ่อน */
+  border: 1px solid #ccc; /* ขอบสีเทาอ่อน */
+  border-radius: 4px; /* มุมโค้งมน */
+  padding: 10px 15px; /* เพิ่มช่องว่างภายใน */
+  font-size: 16px; /* ขนาดตัวอักษร */
+  color: #333; /* สีตัวอักษร */
+  appearance: none; /* เอาสไตล์ดั้งเดิมของเบราว์เซอร์ออก */
+  cursor: pointer; /* เปลี่ยนเป็น cursor ของ pointer */
+  transition: all 0.3s ease; /* เพิ่มการเปลี่ยนแปลงเรียบ */
+  margin-left: 90%;
+  margin-top: 10px;
+}
+
+/* สไตล์เมื่อ focus */
+.TranslateHome:focus {
+  border-color: #007bff; /* ขอบสีฟ้าเมื่อ focus */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* เงาเมื่อ focus */
+  outline: none; /* เอาขอบของเบราว์เซอร์ออก */
+}
+
+/* สไตล์สำหรับ option */
+.TranslateHome option {
+  background-color: #fff; /* พื้นหลังสีขาว */
+  color: #333; /* สีตัวอักษร */
+}
+
+/* สไตล์สำหรับ option แต่ละภาษา */
+.TranslateHome .th {
+  color: #d0021b; /* สีแดงสำหรับภาษาไทย */
+}
+
+.TranslateHome .en {
+  color: #007bff; /* สีน้ำเงินสำหรับภาษาอังกฤษ */
+}
+
+/* สไตล์สำหรับ select เมื่อ hover */
+.TranslateHome:hover {
+  background-color: #e6e6e6; /* พื้นหลังสีเทาอ่อนเมื่อ hover */
+}
+
+.button-back-inFooddetails {
+  font-size: 2rem;
+  margin-left: 1rem;
+  transition: transform 0.2s;
+}
+
+.button-back-inFooddetails:hover {
+  transform: scale(0.8);
+}
+
+.Outline-inFooddetails {
+  position: relative;
+  top: -45px;
+  margin-left: px;
+  border: solid;
+  width: 4.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.Outline-inFooddetails:hover {
+  transform: scale(1.3);
+  background-color: rgb(255, 255, 255);
+}
+
+

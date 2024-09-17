@@ -1,0 +1,306 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 1px;
+  left: 0;
+  background-color: #f6a431;
+  backdrop-filter: blure(5px);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index: 9999;
+}
+#main {
+  position: relative; /* ต้องการให้เนื้อหาหรือองค์ประกอบอื่น ๆ ในหน้าเว็บอยู่ใต้เลเยอร์ */
+  z-index: 1; /* ค่า z-index ที่ต่ำกว่าจะทำให้เนื้อหาหรือองค์ประกอบอื่น ๆ ในหน้าเว็บอยู่ใต้เลเยอร์ */
+}
+
+.sidebar.open {
+  width: 255px;
+  
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #000000;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: rgb(13, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 10px 15px;
+  border: none;
+  margin: 10px;
+  position: relative;
+  top: -25px;
+  left: 80px;
+  transition: background-color 1s ease-out, color 1s ease-out;
+}
+
+.openbtn:hover {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+
+#main {
+  transition: margin-left 0.5s;
+  padding: 16px;
+}
+.custom-color-navbarsidebar {
+  backdrop-filter: blur(px); /* ปรับค่า blur() ตามความเหมาะสม */
+  background: url("https://images.pexels.com/photos/326333/pexels-photo-326333.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  font-size: 22px;
+}
+/* -----------------------โซนปุ่มโฮม------------------------------- */
+
+.home-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* ถ้าต้องการลบเส้นใต้ของลิงค์ */
+  color: inherit; /* ทำให้สีของลิงค์เหมือนกับสีของข้อความในปัจจุบัน */
+}
+
+.icon-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  margin-left: 1px; /* ปรับระยะห่างระหว่างไอคอนกับข้อความตามต้องการ */
+  padding: 5px;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+.link-text {
+  
+  margin-left: 4px; /* เพิ่มระยะห่างเมื่อแสดงข้อความ */
+  margin-bottom: 5px;
+
+}
+
+
+.icon-wrapper:hover .link-text {
+  display: inline; /* แสดงข้อความเมื่อ hover ที่ไอคอน */
+  opacity: 1; /* เมื่อ hover ให้ข้อความเป็นโปร่งใส */
+}
+.border-home {
+  border: solid;
+  border-radius: 10px;
+  margin-left: 2rem;
+  transform: scale(0.9);
+}
+.border-home:hover {
+  transform: scale(0.9);
+}
+/* ตัวอย่างเพิ่มเติมสำหรับการปรับสไตล์อื่น ๆ ถ้าจำเป็น */
+.home-link:hover {
+  color: #ffffff; /* เปลี่ยนสีเมื่อ hover */
+}
+
+.home-link:active {
+  color: #f3f3f3; /* เปลี่ยนสีเมื่อ active */
+}
+/* -----------------------โซนปุ่มโฮม------------------------------- */
+
+/* -----------------------โซนปุ่มเเปลภาษา------------------------------- */
+.translate-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icon-wrappertranslate {
+  display: flex;
+  align-items: center;
+}
+
+.icontranslate {
+  width: 24px;
+  height: 24px;
+}
+
+.icon-img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.translate-text {
+  margin-left: 5px; /* เพิ่มระยะห่างระหว่างไอคอนและข้อความ */
+}
+
+.translate-link:hover .icon-img {
+  transform: scale(1.1);
+}
+
+/* -----------------------โซนปุ่มเเปลภาษา------------------------------- */
+
+/* -----------------------โซนปุ่มเพิ่มข้อมูลร้านค้า------------------------------- */
+
+.icon-wrapperaddshop {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อทำให้เป็น smooth */
+}
+
+.icon-wrapperaddshop:hover{
+  color: black;
+  transform: scale(1.1); /* เพิ่มขนาดให้ใหญ่ขึ้นอย่างน้อย 10% */
+
+} 
+.dropdown-content {
+  position: relative;
+  margin-left: 11px;
+  margin-right:21px;
+  width: 220px;
+  background-color: #f3f3f3;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  transition: opacity 0.3s ease; /* เพิ่ม transition เพื่อทำให้เป็น smooth */
+}
+
+.dropdown-content.show {
+  display: block;
+  opacity: 1;
+}
+
+/* -----------------------โซนปุ่มเพิ่มข้อมูลร้านค้า&------------------------------- */
+.iconHeaderbeforetoggle{
+
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+  font-size: 22px;
+  
+ 
+}
+
+/* -----------------------โซนปุ่มเเก้ไขโปรไฟล์------------------------------- */
+
+
+
+
+
+
+
+
+/* -----------------------โซนปุ่มเเก้ไขโปรไฟล์------------------------------- */
+
+/* -----------------------กรอบสีขาวเอาเม้าไปวาง------------------------------- */
+.outterlineHome{
+  border-radius: 12px;
+  width: 77%; /* กำหนดความกว้างให้น้อยลง */
+  height: 71%; /* กำหนดความสูงให้น้อยลง */
+  padding: 7px;
+  
+  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อทำให้เป็น smooth */
+}
+.outterlineHome:hover{
+  background-color: #f3f3f3;
+  border: solid white;
+  color: black;
+  font-size: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* เพิ่มเงาสีดำ */
+  transform: scale(1.1); /* เพิ่มขนาดให้ใหญ่ขึ้นอย่างน้อย 10% */
+}
+
+.outlineaddAndEdit{
+  border-radius: 12px;
+  width: 77%; /* กำหนดความกว้างให้น้อยลง */
+  height: 71%; /* กำหนดความสูงให้น้อยลง */
+  padding: 7px;
+  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อทำให้เป็น smooth */
+}
+
+.outlineaddAndEdit:hover{
+  background-color: #f3f3f3;
+  border: solid white;
+  color: black;
+  font-size: 16px;
+  width: 80%; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* เพิ่มเงาสีดำ */
+  transform: scale(1.1); /* เพิ่มขนาดให้ใหญ่ขึ้นอย่างน้อย 10% */
+}
+
+.outlineaddshop{
+  border-radius: 12px;
+  width: 77%; /* กำหนดความกว้างให้น้อยลง */
+  height: 71%; /* กำหนดความสูงให้น้อยลง */
+  padding: 7px;
+  transition: transform 0.3s ease; /* เพิ่ม transition เพื่อทำให้เป็น smooth */
+}
+
+.outlineaddshop:hover{
+  background-color: #f3f3f3;
+  border: solid white;
+  color: black;
+  font-size: 16px;
+  width: 90%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* เพิ่มเงาสีดำ */
+  transform: scale(1.1); /* เพิ่มขนาดให้ใหญ่ขึ้นอย่างน้อย 10% */
+}
+
+/* -----------------------กรอบสีขาวเอาเม้าไปวาง------------------------------- */
+
+
+
+.custom-select777 {
+  width: 70px;
+  height: auto;
+  margin-left: 30%;
+  margin-top: 10px;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.custom-select777 img {
+  width: 30px;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 100%;
+}
+
+.custom-select777 select {
+  appearance: none;
+  margin-left: 10px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid black; /* เพิ่มขอบสีดำ */
+  padding: 5px; /* เพิ่ม padding เพื่อให้มีระยะห่างจากขอบ */
+  border-radius: 4px; /* เพิ่มความโค้งให้ขอบ ถ้าต้องการ */
+}
+
+.thai777 {
+  color: black;
+}
+.eng777 {
+  color: #000000;
+}

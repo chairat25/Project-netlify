@@ -1,0 +1,159 @@
+.iconbackinaddshop{
+  font-size: 2rem;
+  position: relative; /* Add this to fix the element's position relative to the viewport */
+   /* Adjust this value as needed */
+  left:1rem;/* Adjust this value as needed */
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+.outlineinaddshop{
+  position: relative; /* Ensures the element stays fixed in the viewport */
+  bottom: 17rem; /* Adjust this value as needed, to position below .backintranslate */
+  right: 20rem; /* Adjust this value as needed */
+  border: solid;
+  width: 4.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+  background-color: rgb(255, 255, 255);
+}
+.iconbackinaddshop:hover{
+  transform: scale(1.3);
+}
+.outlineinaddshop:hover{
+  transform: scale(1.3);
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.background {
+  position: relative;
+  width: 100vw; /* กำหนดความกว้างเต็มหน้าจอ */
+  height: 100vh; /* กำหนดความสูงเต็มหน้าจอ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* ป้องกันการล้นของ pseudo-element */
+}
+
+.background::before {
+  content: "";
+  background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20210729/pngtree-korean-autumn-eve-traditional-festival-food-background-image_753942.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px); /* เพิ่มความเบลอ */
+}
+
+.boxtext {
+  border-radius: 30px;
+  padding: 40px;
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.8
+  ); /* เพิ่มพื้นหลังโปร่งแสงเพื่อความอ่านง่าย */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* ทำให้มีการเลื่อนแนวตั้งเมื่อมีเนื้อหาเกิน */
+  max-height: 80vh; /* กำหนดความสูงสูงสุดของกล่องเพื่อให้มีการเลื่อนเมื่อเกิน */
+  width: 40vw; /* เพิ่มความกว้างของกล่อง */
+  height: 100vh; /* เพิ่มความสูงของกล่อง */
+  z-index: 1; /* วาง .boxtext อยู่หน้าพื้นหลัง */
+  position: relative; /* ทำให้ .boxtext อยู่ในลำดับที่สูงกว่า pseudo-element */
+}
+
+.input-style {
+  width: 50%;
+  margin-top: 5px;
+}
+
+.input-map {
+  width: 50%;
+  height: 10%;
+  margin-top: 5px;
+}
+
+.symbol007 {
+  position: relative;
+}
+
+.symbol007 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+  cursor: pointer;
+}
+
+
+
+.imgaddshop {
+  max-width: 50%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10px;
+}
+
+.buttonContainer {
+  display: flex;
+
+  margin-top: 20px;
+}
+
+.buttonshopsubmit button,
+.buttonshopcancel button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonshopsubmit button:hover,
+.buttonshopcancel button:hover {
+  background-color: #45a049;
+}
+
+.buttonshopcancel button {
+  background-color: #f44336;
+}
+
+.buttonshopcancel button:hover {
+  background-color: #da190b;
+}
+
+.Halal-Shop {
+  margin-left: 55%;
+  margin-top: -60px;
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.Vegetarian-Shop {
+  margin-left: 55%;
+  margin-top: -80px;
+  max-width: 100px;
+  border-radius: 10px;
+}
+
+.Mangswirat-Shop {
+  margin-left: 55%;
+  margin-top: -80px;
+  max-width: 100px;
+  border-radius: 10px;
+}

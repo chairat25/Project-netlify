@@ -1,0 +1,129 @@
+.backinaddfood{
+  font-size: 2rem;
+  position: relative; /* Add this to fix the element's position relative to the viewport */
+   /* Adjust this value as needed */
+  left:1rem;/* Adjust this value as needed */
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+
+.outlineinaddfood{
+  position: relative; /* Ensures the element stays fixed in the viewport */
+  bottom: 17rem; /* Adjust this value as needed, to position below .backintranslate */
+  right: 20rem; /* Adjust this value as needed */
+  border: solid;
+  width: 4.5rem;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.backinaddfood:hover{
+  transform: scale(1.3);
+}
+
+.outlineinaddfood:hover{
+  transform: scale(1.3);
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+.backgroundfood {
+  position: relative;
+  width: 100vw; /* กำหนดความกว้างเต็มหน้าจอ */
+  height: 100vh; /* กำหนดความสูงเต็มหน้าจอ */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* ป้องกันการล้นของ pseudo-element */
+}
+
+.backgroundfood::before {
+  content: '';
+  background-image: url('https://png.pngtree.com/background/20211215/original/pngtree-rice-spoon-korean-food-traditional-background-picture-image_1452789.jpg');
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  filter: blur(3px); /* เพิ่มความเบลอ */
+}
+
+.boxtextfood {
+  border-radius: 30px;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.8); /* เพิ่มพื้นหลังโปร่งแสงเพื่อความอ่านง่าย */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* ทำให้มีการเลื่อนแนวตั้งเมื่อมีเนื้อหาเกิน */
+  max-height: 80vh; /* กำหนดความสูงสูงสุดของกล่องเพื่อให้มีการเลื่อนเมื่อเกิน */
+  width: 40vw; /* เพิ่มความกว้างของกล่อง */
+  height: 100vh; /* เพิ่มความสูงของกล่อง */
+  z-index: 1; /* วาง .boxtext อยู่หน้าพื้นหลัง */
+  position: relative; /* ทำให้ .boxtext อยู่ในลำดับที่สูงกว่า pseudo-element */
+}
+
+.input-stylefood, .inputfoodelement {
+  width: 40%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.inputfoodelement {
+  width: 70%;
+  height: 30vh;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.input-stylefoodpice {
+  width: 20%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 5px;
+}
+
+.imgaddfood {
+  width: 80%;
+  height: auto;
+  margin-top: 30px;
+  border-radius: 10PX;
+}
+
+.buttonContainerfood {
+  display: flex;
+  margin-top: 20px;
+}
+
+.buttonfoodsubmit button, .buttonfoodcancel button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonfoodsubmit button:hover, .buttonfoodcancel button:hover {
+  background-color: #45a049;
+}
+
+.buttonfoodcancel button {
+  background-color: #f44336;
+}
+
+.buttonfoodcancel button:hover {
+  background-color: #da190b;
+}

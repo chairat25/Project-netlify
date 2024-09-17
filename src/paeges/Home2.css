@@ -1,0 +1,42 @@
+.navbar {
+  position: fixed; /* กำหนดให้ Navbar อยู่ในตำแหน่งที่ต้องการ */
+  top: 50; /* ตั้งค่าให้ Navbar อยู่บนสุดของหน้าจอ */
+  right: 0; /* ตั้งค่าให้ Navbar ชิดขอบขวาของหน้าจอ */
+  max-width: 2200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #5cff6c;
+  z-index: 999; /* กำหนดค่า Z-index เพื่อให้ Navbar อยู่หน้าหน้าอื่น */
+}
+
+.avatar {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info div {
+  margin-right: 0.5rem;
+}
+
+.logout-btn {
+  background-color: #EF4444;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: #DC2626;
+}
